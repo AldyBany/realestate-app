@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400;500;700;800&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  background: honeydew;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+      grid-template-columns: 20% auto;
+  height: 100vh;
+  width: 100%;
+  padding: 2.5% 2%;
+}
+
+.left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.side-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+  color: #0082e6;
+}
+
+.side-menu li {
+  margin-bottom: 2rem;
+}
+
+.side-menu li a {
+  color: #777;
+  border-radius: .6em;
+  font-weight: 500;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.side-menu li a:hover {
+  padding: 10px 12px;
+  background-color: #88bde7;
+  color: black;
+}
+
+.side-menu li a i {
+  margin-right: .8rem;
+  font-size: 1.4rem;
+}
+
+.update-btn {
+  padding: 4%;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 4px 16px honeydew, -2px -2px -16px #fff;
+          box-shadow: 4px 4px 16px honeydew, -2px -2px -16px #fff;
+  border-radius: .5em;
+  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.update-btn a i {
+  font-size: 1.5rem;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
