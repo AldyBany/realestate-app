@@ -12,6 +12,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+// Utilities
+.p-1{
+    padding: 20px;
+   
+}
+
+
 .container{
     background: honeydew;
     display: grid;
@@ -38,10 +45,21 @@ body{
     color: #0082e6;
 }
 
+.text{
+    color: #0082e6;
+}
+
 .side-menu li{
     margin-bottom: 2rem;
 }
-
+input{
+    width: 64%;
+    margin-bottom: 30px;
+    padding: 12px 8px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
 .side-menu li a{
     color: #777;
     border-radius: .6em;
@@ -72,4 +90,18 @@ body{
 .update-btn a i{
     font-size: 1.5rem;
     color: black;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 40px;
+}
+.card{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    background-color: #fff;
+    margin: 20px 0;
 }

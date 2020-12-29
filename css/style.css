@@ -12,6 +12,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.p-1 {
+  padding: 20px;
+}
+
 .container {
   background: honeydew;
   display: -ms-grid;
@@ -54,8 +58,21 @@ body {
   color: #0082e6;
 }
 
+.text {
+  color: #0082e6;
+}
+
 .side-menu li {
   margin-bottom: 2rem;
+}
+
+input {
+  width: 64%;
+  margin-bottom: 30px;
+  padding: 12px 8px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
 }
 
 .side-menu li a {
@@ -95,5 +112,24 @@ body {
 .update-btn a i {
   font-size: 1.5rem;
   color: black;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
