@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 
 // Utilities
@@ -17,12 +18,24 @@ body{
     padding: 20px;
    
 }
+.m-1{
+    margin: 20px 0;
+}
+img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.heading{
+    margin-bottom: 20px;
+}
 
 
 .container{
-    background: honeydew;
+    background: rgb(243, 246, 248);
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 20% auto 24%;
     height: 100vh;
     width: 100%;
     padding: 2.5% 2%;
@@ -38,6 +51,65 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+// .main-content{
+//     width: 100%;
+// }
+.properties-view{
+    height: 72.5vh;
+    padding: 20px 0;
+}
+.property-card{
+    display: flex;
+}
+.property-card img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.card-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icons{
+    margin: 10px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    a{
+        color: #333;
+        margin-right: 15px;
+        i{
+            margin-left: 10px;
+        }
+    }
+}
+.property-details{
+    height: 80vh;
+    padding: 20px;
+    // width: 300px;
+}
+
+.property-details img{
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.btn-call{
+    padding: 10px 30px;
+    background-color: darken(#042035,5);
+    color: #fff;
+    border-radius: 10px;
+    margin: 50px 0 20px;
+    text-align: center;
+    cursor: pointer;
+    a{
+        color: #fff;
+    }
+    
 }
 
 .logo{
@@ -94,14 +166,25 @@ input{
 
 .grid{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
+    margin-right: 20px;
     column-gap: 40px;
 }
 .card{
-    width: 100%;
+    width: 96%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,.2);
     background-color: #fff;
-    margin: 20px 0;
+    margin: 10px 0;
+}
+
+
+@media(max-width: 768px){
+    .side-menu{
+        display: none;
+    }
+    .property-details{
+        display: none;
+    }
 }
